@@ -1,0 +1,23 @@
+.th-badge {
+    border-radius: 1.5rem;
+    padding: .80rem 2rem;
+    width: max-content;
+    vertical-align: middle;
+    user-select: none;
+}
+.th-badge.th-size-small {
+    font-size: 14px;
+    padding: .40rem 1rem;
+}
+.th-badge.th-color-pending {
+    color: #1f2937;
+    background: #f3f4f6;
+}
+.th-badge.th-color-success {
+    color: #10674e;
+    background: #d1fae5;
+}
+.th-badge.th-color-error {
+    color: #9d174d;
+    background: #fce7f3;
+}

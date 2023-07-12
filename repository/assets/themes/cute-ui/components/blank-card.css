@@ -1,0 +1,18 @@
+.th-blank-card {
+    border-radius: .50rem;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.th-blank-card 
+.th-blank-card-header {
+    padding: 0 2rem;
+    padding-top: 2rem;
+}
+.th-blank-card 
+.th-blank-card-body {
+    padding: 2rem;
+}
+.th-blank-card 
+.th-blank-card-footer {
+    padding-bottom: 2rem;
+}

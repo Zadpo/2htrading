@@ -1,0 +1,103 @@
+.th-table-actionbar 
+.th-table-actionbar-bottom {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.th-table-actionbar 
+.th-table-actionbar-bottom .selects {
+    display: flex;
+}
+.th-table-actionbar 
+.th-table-actionbar-bottom 
+.selects 
+select, .th-table-actionbar 
+.th-table-actionbar-bottom select  {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y: 50%;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding-right: 2rem;
+    width: max-content;
+    color: #777;
+    border-radius: 0;
+}
+.th-table-actionbar 
+.th-table-actionbar-bottom 
+.selects 
+select:first-child {
+    border-right: 0;
+}
+.th-table-actionbar 
+.th-table-actionbar-bottom .buttons {
+    display: flex;
+}
+.th-table-actionbar 
+.th-table-actionbar-bottom .buttons a {
+    border: 1px solid #ccc;
+    height: max-content;
+    font-size: var(--th-box-font-size);
+    padding: var(--th-box-padding);
+    margin: 0;
+    color: #555;
+    position: relative;
+}
+.th-table-actionbar 
+.th-table-actionbar-bottom .buttons a:hover {
+    background: #f0f0f0;
+}
+.th-table-actionbar 
+.th-table-actionbar-bottom .buttons a:active {
+    transform: translateY(1px);
+}
+.th-table-actionbar 
+.th-table-actionbar-bottom .buttons a:first-child {
+    border-right: none;
+}
+.th-table {
+    width: 100%;
+    table-layout: fixed;
+}
+.th-table 
+thead {
+    user-select: none;
+    border-bottom: 1px solid #f0f0f0;
+}
+.th-table 
+thead 
+tr 
+th {
+    height: 50px;
+    padding: 0 1.5rem;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    color: #444;
+}
+.th-table 
+tbody 
+tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+.th-table 
+tbody 
+tr:nth-child(even) {
+    background: #fff8e0;
+}
+.th-table 
+tbody 
+tr 
+td {
+    height: 55px;
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 1.5rem;
+}

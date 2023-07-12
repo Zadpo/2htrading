@@ -1,0 +1,139 @@
+.ui-table-container {
+    padding: 2.5rem 2rem;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    display: block;
+    width: 100%;
+}
+
+.ui-table-container 
+.ui-table-container-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.ui-table-container-bottom-actionbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ui-table-container-bottom-actionbar-menu button, .ui-table-container-bottom-actionbar-menu a {
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--ui-input-text-size);
+	border-radius: var(--ui-border-radius);
+	border: var(--ui-input-border);
+	color: var(--ui-input-text-color);
+    width: 50px;
+	height: var(--ui-input-height);
+	position: relative;
+    text-decoration: none;
+}
+
+.ui-table-container-bottom-actionbar-menu button:focus, .ui-table-container-bottom-actionbar-menu a:focus {
+	outline: none;
+	border: 1px solid var(--ui-color-blue);
+}
+
+.ui-table-scroller {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 2rem;
+}
+
+.ui-table-image {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    object-position: top left;
+    border-radius: .25rem;
+    user-select: none;
+}
+
+.ui-table {
+    border-radius: .25rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.ui-table 
+thead {
+    background: transparent;
+    border-bottom: 1px solid rgba(224, 224, 224);
+}   
+.ui-table 
+thead 
+tr 
+th {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    padding: 16px;
+    user-select: none;
+}
+
+.ui-table 
+tbody {
+    background: transparent;
+}
+
+.ui-table 
+tbody 
+tr {
+        border-bottom: 1px solid rgba(224, 224, 224);
+}
+.ui-table 
+tbody 
+tr:last-child {
+
+    border-bottom: none;
+
+}
+.ui-table 
+tbody 
+tr 
+td {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: normal;
+    padding: 16px;
+    color: #222;
+    word-break: break-all;
+}
+
+/* settings */
+
+.ui-table.ui-table-painted 
+tbody 
+tr:nth-child(even) {
+
+    background: rgb(245, 245, 245);
+
+}
+
+.ui-table.ui-table-hovered 
+tbody 
+tr:hover {
+
+    background: rgb(245, 245, 245);
+
+}
+
+.ui-table.ui-table-equal {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.ui-table.ui-table-equal 
+tbody 
+td {
+    width: 25%;
+}

@@ -1,0 +1,42 @@
+.th-info {
+    /*margin-bottom: var(--th-margin-bottom);*/
+    /*border-radius: var(--th-box-radius);*/
+    padding: var(--th-box-padding);
+    padding-top: 1.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.th-info > * {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: .50rem;
+    padding: 0;
+    line-height: 1;
+}
+.th-info 
+.th-info-close {
+    font-size: .60rem;
+    text-decoration: none;
+    position: absolute;
+    right: .70rem;
+    top: .1rem;
+}
+
+.th-info.th-info-success {
+    background: #edf7ed;
+}
+.th-info.th-info-success 
+.th-info-close {
+    color: #224a24;
+}
+.th-info.th-info-success 
+.th-info-text {
+    color: #224a24;
+}
+.th-info.th-info-success
+.th-info-icon {
+    color: #5cb660;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}

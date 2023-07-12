@@ -1,0 +1,25 @@
+.ui-breadcrumbs {
+    font-family: 'Roboto';
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.ui-breadcrumbs a, .ui-breadcrumbs span {
+    color: #999;
+    font-weight: 500;
+    font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
+    user-select: none;
+}
+.ui-breadcrumbs span {
+    padding: 0 .95rem;
+}
+.ui-breadcrumbs a:hover {
+    color: var(--ui-color-blue);
+}
+.ui-breadcrumbs a.active {
+    color: var(--ui-color-blue);
+}

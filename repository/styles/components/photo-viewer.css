@@ -1,0 +1,25 @@
+.th-photo-viewer {
+    width: 100%;
+    cursor: pointer;
+}
+.th-photo-viewer img {
+    width: 100%;
+}
+.th-photo-viewer-modal {
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 999;
+}
+.th-photo-viewer-modal.shown {
+    display: flex;
+}
+.th-photo-viewer-modal.shown 
+img {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,23 @@
+.elevation-off {
+    box-shadow: none;
+}
+.ui-elevation-off {
+    box-shadow: none;
+}
+.ui-center {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.ui-none {
+    color: transparent;
+    pointer-events: none;
+    user-select: none;
+    filter: opacity(0);
+}
+.ui-border-none {
+    border: none;
+}
+.ui-select-none {
+    user-select: none;
+}

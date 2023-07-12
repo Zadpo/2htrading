@@ -1,0 +1,109 @@
+.ui-nav {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ui-nav 
+.ui-nav-toggler {
+    font-size: 16px;
+    font-weight: normal;
+    color: #64748b;
+    border-radius: 2rem;
+    padding: .50em .90rem;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+.ui-nav 
+.ui-nav-toggler:hover {
+    background: #f0f0f0;
+}
+.ui-nav-menu {
+
+}
+.ui-nav-menu 
+.ui-nav-menu-item-dropdown {
+    position: relative;
+    display: inline-table;
+} 
+.ui-nav-menu 
+.ui-nav-menu-item-dropdown 
+.ui-nav-menu-item-dropdown-menu {
+    position: absolute;
+    left: 50%;
+    z-index: 999;
+    border-radius: .50rem;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1);
+    width: max-content;
+    min-width: 128px;
+    filter: opacity(0);
+    transform: translate(-50%, -64px);
+    transition: .3s;
+    pointer-events: none;
+    user-select: none;
+}
+.ui-nav-menu 
+.ui-nav-menu-item-dropdown:hover 
+.ui-nav-menu-item-dropdown-menu  {
+    pointer-events: all;
+    transform: translate(-50%, 0px);
+    filter: opacity(1);
+} 
+.ui-nav-menu 
+.ui-nav-menu-item-dropdown 
+.ui-nav-menu-item-dropdown-menu 
+.ui-nav-menu-item-dropdown-menu-item {
+    font-weight: 500;
+    display: block;
+    padding: 1rem;
+    user-select: none;
+    text-decoration: none;
+    color: #64748b;
+}
+.ui-nav-menu 
+.ui-nav-menu-item-dropdown 
+.ui-nav-menu-item-dropdown-menu 
+.ui-nav-menu-item-dropdown-menu-item:hover {
+    background: #f0f0f0;
+    color: var(--ui-color-purple);
+}
+.ui-nav-menu 
+.ui-nav-menu-item, 
+.ui-nav-menu 
+a.ui-nav-menu-item, 
+.ui-nav-menu 
+.ui-nav-menu-item-dropdown 
+a.ui-nav-menu-item-dropdown-toggler {
+    font-size: 16px;
+    font-weight: normal;
+    color: #64748b;
+    border-radius: 2rem;
+    padding: .50rem .75rem;
+    position: relative;
+    display: inline-table;
+    overflow: hidden;
+    transition: .3s;
+    text-decoration: none;
+    user-select: none;
+}
+
+.ui-nav-menu 
+.ui-nav-menu-item:hover, 
+.ui-nav-menu 
+a.ui-nav-menu-item:hover, 
+.ui-nav-menu 
+.ui-nav-menu-item-dropdown 
+a.ui-nav-menu-item-dropdown-toggler:hover  {
+    background: #f0f0f0;
+}
+
+.ui-nav-menu 
+.ui-nav-menu-item:last-child, 
+.ui-nav-menu 
+a.ui-nav-menu-item:last-child  {
+    margin-right: 0;
+}

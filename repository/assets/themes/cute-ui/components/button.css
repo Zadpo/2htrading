@@ -1,0 +1,26 @@
+.th-button {
+    padding: var(--th-box-padding);
+    border-radius: var(--th-box-radius);
+    font-size: var(--th-box-font-size);
+    font-weight: 500;
+    border: 1px solid;
+    transform: translateY(0px);
+    outline: none;
+}
+.th-button:active {
+    transform: translateY(1px);
+}
+
+.th-button-primary {
+    color: #fff;
+    background: var(--th-color-primary);
+}
+.th-button-primary:hover {
+    background: #275ced;
+}
+
+.th-button-block {
+    display: block;
+    width: 100%;
+}
+

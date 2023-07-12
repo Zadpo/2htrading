@@ -1,0 +1,13 @@
+.th-input-label {
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: .50rem;
+    color: #222;
+}
+.th-input-guide {
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: .95rem;
+    margin-bottom: .50rem;
+    color: #888;
+}

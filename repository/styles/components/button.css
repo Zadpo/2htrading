@@ -1,0 +1,209 @@
+.th-button, a.th-button {
+	position: relative;
+	overflow: hidden;
+	color: #222;
+	outline: none;
+	border: 1px solid transparent;
+	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+	padding: var(--th-box-padding);
+	font-size: var(--th-box-font-size);
+	font-weight: 500;
+	border-radius: var(--th-box-radius);
+	background: #dadada;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	cursor: pointer;
+	user-select: none;
+	min-width: max-content;	
+	transition: .3s;
+	height: max-content;
+}
+
+.th-button:active {
+	top: 1px;
+}
+
+/*-----*/
+
+.th-button.th-size-small, a.th-button.th-size-small {
+    padding: .50rem .75rem;
+	font-size: 14px;
+}
+
+/*-----*/
+
+.th-button:focus, 
+a.th-button:focus {
+	outline: none;
+}
+
+/*-----*/
+
+.th-button.th-disabled, 
+a.th-button.th-disabled {
+	cursor: none;
+	pointer-events: none;
+}
+
+/*-----*/
+
+.th-button.th-color-red, 
+a.th-button.th-color-red {
+	background: var(--th-color-red);
+	color: #fff;
+}
+.th-button.th-color-red:hover, 
+a.th-button.th-color-red:hover {
+	background: #e92d3a;
+	color: #fff;
+}
+.th-button.th-color-red.th-disabled, 
+a.th-button.th-color-red.th-disabled {
+	background: #f36c60;
+	color: #fff;
+}
+
+/*-----*/
+
+.th-button.th-color-blue, 
+a.th-button.th-color-blue {
+	background: var(--th-color-blue);
+	color: #fff;
+}
+.th-button.th-color-blue:hover, 
+a.th-button.th-color-blue:hover {
+	background: #2f75ff;
+	color: #fff;
+}
+.th-button.th-color-blue.th-disabled, 
+a.th-button.th-color-blue.th-disabled {
+	background: #5677fc;
+	color: #fff;
+}
+
+/*-----*/
+
+.th-button.th-color-green, 
+a.th-button.th-color-green {
+	background: var(--th-color-green);
+	color: #fff;
+}
+.th-button.th-color-green:hover, 
+a.th-button.th-color-green:hover {
+	background: #2f75ff;
+	color: #fff;
+}
+.th-button.th-color-green.th-disabled, 
+a.th-button.th-color-green.th-disabled {
+	background: #5677fc;
+	color: #fff;
+}
+
+/*-----*/
+
+.th-button.th-color-yellow, 
+a.th-button.th-color-yellow {
+	background: var(--th-color-yellow);
+	color: #fff;
+}
+.th-button.th-color-yellow.th-disabled, 
+a.th-button.th-color-yellow.th-disabled {
+	background: #ffd89b;
+	color: #fff;
+}
+
+
+/*----*/
+
+.th-button.th-color-purple, 
+a.th-button.th-color-purple {
+	background: var(--th-color-purple);
+	color: #fff;
+}
+.th-button.th-color-dark, 
+a.th-button.th-color-dark {
+	background: var(--th-color-dark);
+	color: #fff;
+}
+.th-button.th-color-light, 
+a.th-button.th-color-light {
+	background: #fff;
+	box-shadow: none;
+}
+.th-button.th-mb-submit-button {
+	margin-top: 1.5rem;
+}
+
+/* outline */
+
+.th-button-outline, a.th-button-outline {
+	background: transparent;
+	position: relative;
+	overflow: hidden;
+	color: #222;
+	outline: none;
+	border: 1px solid #222;
+	padding: var(--th-box-padding);
+	font-size: var(--th-box-font-size);
+	font-weight: 500;
+	border-radius: var(--th-box-radius);
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	cursor: pointer;
+	user-select: none;
+	min-width: max-content;
+	transition: .3s;
+	box-shadow: none;
+}
+.th-button-outline:hover, 
+a.th-button-outline:hover {
+	background: #222;
+	border-color: #222;
+	color: #fff;
+}
+.th-button.th-size-small, a.th-button.th-size-small, 
+.th-button-outline.th-size-small, a.th-button-outline.th-size-small  {
+    padding: .50rem .75rem;
+	font-size: 14px;
+}
+.th-button-outline.th-button-red, 
+a.th-button-outline.th-button-red {
+	background: transparent;
+	border-color: var(--th-color-red);
+	color: var(--th-color-red);
+}
+.th-button-outline.th-button-red:hover, 
+a.th-button-outline.th-button-red:hover {
+	background: var(--th-color-red);
+	border-color: var(--th-color-red);
+	color: #fff;
+}
+.th-button-outline.th-color-blue, 
+a.th-button-outline.th-color-blue {
+	background: transparent;
+	border-color: var(--th-color-blue);
+	color: var(--th-color-blue);
+}
+.th-button-outline.th-color-red:hover, 
+a.th-button-outline.th-color-blue:hover {
+	background: var(--th-color-blue);
+	border-color: var(--th-color-blue);
+	color: #fff;
+}
+.th-button-outline.th-button-green, 
+a.th-button-outline.th-button-green {
+	background: transparent;
+	border-color: var(--th-color-green);
+	color: var(--th-color-green);
+}
+.th-button-outline.th-button-green:hover, 
+a.th-button-outline.th-button-green:hover {
+	background: var(--th-color-green);
+	border-color: var(--th-color-green);
+	color: #fff;
+}

@@ -1,0 +1,25 @@
+.th-breadcrumbs {
+    user-select: none;
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.th-breadcrumbs > * {
+    text-decoration: none !important;
+    margin-right: 1rem;
+    color: #999;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+}
+.th-breadcrumbs span {
+    content: '\f324';
+}
+.th-breadcrumbs a:hover {
+    color: var(--app-color-tertiary);
+    font-weight: 500;
+}
+.th-breadcrumbs a.active {
+    color: var(--app-color-primary);
+    font-weight: 500;
+}

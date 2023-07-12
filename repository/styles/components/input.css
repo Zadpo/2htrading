@@ -1,0 +1,226 @@
+.th-input-text, .th-input-password, .th-input-select, .th-input-textarea, .th-input-date {
+    padding: var(--th-box-padding);
+    border-radius: var(--th-box-radius);
+    outline: none;
+    font-size: var(--th-box-font-size);
+    border: 1px solid #ccc;
+    width: 100%;
+    display: block;
+    user-select: none;
+    transition: .3s;
+}
+.th-input-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: 50%;
+    padding-right: 2rem;
+    color: #777;
+}
+.th-input-textarea {
+    resize: none;
+    min-height: 200px;
+}
+.th-input-text:focus, .th-input-password:focus, .th-input-select:focus, .th-input-textarea:focus, .th-input-date:focus {
+    border: 1px solid var(--app-color-primary);
+}
+.th-input-text.error, .th-input-password.error, .th-input-select.error, .th-input-textarea.error:focus, .th-input-date.error {
+    background: #fbf6f6;
+    border: 1px solid #f06360;
+}
+.th-input-text.error:focus, .th-input-password.error:focus, .th-input-select.error:focus, .th-input-textarea.error:focus, .th-input-date.error:focus {
+    border: 1px solid #f06360;
+}
+.th-password-wrapper {
+    position: relative;
+}
+.th-password-wrapper 
+.th-password-wrapper-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+.th-password-toggler {
+	position: absolute;
+	font-size: 1rem;
+	color: #94a3b8;
+	z-index:  200;
+	top: 50%;
+	right: .50rem;
+	transform: translate(-50%, -50%);
+}
+.th-password-toggler:hover {
+	color: #666;
+}
+.th-input-text:read-only, .th-input-select.readonly {
+    background-color: var(--app-color-lightess);
+    border: 1px solid var(--app-color-primary);
+    color: var(--app-color-primary);
+}
+.th-input-text:read-only:focus, .th-input-select.readonly:focus {
+    border: 1px solid var(--app-color-primary);
+}
+.th-upload {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border: 3px solid var(--app-color-primary);
+    border-radius: 1rem;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+.th-upload input {
+    display: none;
+}
+.th-upload .th-upload-wrapper {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.th-upload .th-upload-wrapper .th-upload-message {
+    color: var(--app-color-primary) !important;
+    text-align: center;
+}
+.th-upload .th-upload-wrapper .th-upload-message span {
+    display: block;
+    color: var(--app-color-primary) !important;
+    font-weight: 500;
+}
+.th-upload .th-upload-wrapper .th-upload-message .icon {
+    font-size: 5rem;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+.th-upload .th-upload-wrapper .th-upload-message .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: .50rem;
+}
+.th-upload .th-upload-wrapper .th-upload-message .meta {
+    font-size: .75rem;
+    font-weight: 500;
+}
+.th-upload .image-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    user-select: none;
+    cursor: none;
+}
+.th-upload a.remove-button {
+    display: none;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    color: var(--app-color-primary);
+    line-height: 1;
+    padding: .50rem;
+    z-index: 999;
+}
+.th-upload:hover {
+    background: #eff5ff;
+}
+.th-upload.image-shown .image-container {
+    display: block;
+}
+.th-upload.image-shown .th-upload-message {
+    display: none;
+}
+.th-upload.image-shown {
+    pointer-events: none;
+}
+.th-upload.image-shown a.remove-button {
+    pointer-events: all;
+}
+.th-upload.image-shown a.remove-button {
+    display: block;
+}
+.th-upload.readonly a.remove-button {
+    display: none;
+}
+.th-input-checkbox {
+    background: grey;
+    border-radius: 2rem;
+    width: 96px;
+    height: 50px;
+    position: relative;
+    transition: .3s;
+}
+.th-input-checkbox.th-input-checkbox-small {
+    width: 80px;
+    height: 40px;
+}
+.th-input-checkbox input[type="checkbox"] {
+    display: none;
+}
+.th-input-checkbox label {
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+    left: .50rem;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.th-input-checkbox.th-input-checkbox-small label {
+    width: 30px;
+    height: 30px;
+}
+.th-input-checkbox label:hover {
+    background: #fff;
+}
+.th-input-checkbox input:checked ~ .th-input-checkbox {
+    background: var(--app-color-primary);
+}
+.th-input-checkbox input:checked ~ .th-input-checkbox label {
+    left: 2.6rem;
+    background: #fff;
+}
+.th-input-checkbox.checked {
+    background: var(--app-color-primary);
+}
+.th-input-checkbox.checked label {
+    left: 2.6rem;
+    background: #fff;
+}
+.th-input-group {
+    display: flex;
+}
+.th-input-group > select {
+    min-width: max-content;
+}
+.th-input-group > * {
+    border-radius: 0 !important;
+}
+.th-input-group > *:first-child {
+    border-right: none;
+    border-radius: var(--th-box-radius) 0 0 var(--th-box-radius) !important;
+}
+.th-input-group > *:last-child {
+    border-left: none;
+    border-radius: 0 var(--th-box-radius) var(--th-box-radius) 0 !important;
+}
+.th-input-small {
+    padding: .50rem .75rem;
+	font-size: 14px;
+}

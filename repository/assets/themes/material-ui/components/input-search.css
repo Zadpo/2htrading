@@ -1,0 +1,26 @@
+.ui-input-search-wrapper {
+	display: block;
+	position: relative;
+}
+.ui-input-search {
+	font-size: var(--ui-input-text-size);
+	border-radius: var(--ui-border-radius);
+	border: var(--ui-input-border);
+	color: var(--ui-input-text-color);
+	display: block;
+	width: 100%;
+	height: var(--ui-input-height);
+	padding: 0 1rem 0 2.5rem;
+}
+.ui-input-search:focus {
+	outline: none;
+	border: 1px solid var(--ui-color-blue);
+}
+.ui-input-search-icon {
+	position: absolute;
+	font-size: 1rem;
+	color: #94a3b8;
+	z-index:  200;
+	top: .85rem;
+	left: .95rem;
+}

@@ -1,0 +1,37 @@
+.ui-card {
+    border-radius: .50rem;
+}
+.ui-card.ui-card-content-only {
+    background: transparent;
+    border: none;
+}
+.ui-card 
+.ui-card-header {
+    color: #1e293b;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+.ui-card 
+.ui-card-header-logo {
+    width: 64px;
+}
+.ui-card 
+.ui-card-header-title {
+    padding: 0;
+    font-weight: bold;
+    margin-bottom: .25rem;
+    user-select: none;
+}
+.ui-card 
+.ui-card-header-meta {
+    font-size: 15px;
+    font-weight: 500;
+    user-select: none;
+}
+.ui-card 
+.ui-card-body {
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+.ui-card 
+.ui-card-footer {
+    padding: 1.5rem;
+}

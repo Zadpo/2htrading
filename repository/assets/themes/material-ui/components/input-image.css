@@ -1,0 +1,78 @@
+.ui-input-image-container  {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    display: block;
+}
+.ui-input-image-container 
+.ui-input-image-container-wrapper {
+    position: relative;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px dashed rgb(203, 213, 225);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.ui-input-image-container img {
+    display: none;
+}
+.ui-input-image-container .ui-input-image-container-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: .50rem 1rem;
+    font-size: 2rem;
+    color: #fff;
+    display: none;
+}
+
+.ui-input-image-container 
+.ui-input-image-container-wrapper 
+.ui-input-image-container-wrapper-message {
+    text-align: center;
+    display: block;
+}
+
+.ui-input-image-container 
+.ui-input-image-container-wrapper 
+.ui-input-image-container-wrapper-message 
+.ui-input-image-container-wrapper-message-icon {
+    font-size: 5rem;
+}
+.ui-input-image-container 
+.ui-input-image-container-wrapper 
+.ui-input-image-container-wrapper-message 
+.ui-input-image-container-wrapper-message-text {
+    font-size: 1rem;
+    color: #444;
+}
+.ui-input-image-container [type="file"] {
+    display: none;
+}
+
+.ui-input-image-container.uploaded {
+    border: 3px dashed rgb(203, 213, 225);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.ui-input-image-container.uploaded 
+.ui-input-image-container-close {
+    display: block;
+}
+.ui-input-image-container.uploaded 
+.ui-input-image-container-wrapper {
+    display: none;
+}
+.ui-input-image-container.uploaded 
+.ui-input-image-container-wrapper {
+    display: none;
+}
+.ui-input-image-container.uploaded img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}

@@ -1,0 +1,111 @@
+.ui-select {
+	border-radius: var(--ui-border-radius);
+	border: var(--ui-input-border);
+	display: flex;
+  align-items: center;
+  justify-content: start;
+	width: 100%;
+	height: 50px;
+	padding: 0 1.1rem;
+	position: relative;
+  text-decoration: none;
+  user-select: none;
+
+}
+.ui-select.disabled {
+  background: #f0f0f0;
+  pointer-events: none;
+
+}
+.ui-select:hover {
+	outline: none;
+	border: 1px solid var(--ui-color-blue);
+}
+.ui-select.disabled:hover {
+	outline: none;
+  border: var(--ui-input-border);
+}
+.ui-select 
+.ui-select-toggler {
+  position: absolute;
+  top: .85rem;
+  height: 100%;
+  width: 100%;
+	font-size: var(--ui-input-text-size);
+	color: var(--ui-input-text-color);
+  text-decoration: none;
+  user-select: none;
+  pointer-events: all;
+}
+.ui-select 
+.ui-select-icon {
+  position: absolute;
+  top: .85rem;
+  right: 1rem;
+	font-size: var(--ui-input-text-size);
+	color: var(--ui-input-text-color);
+  text-decoration: none;
+  user-select: none;
+  pointer-events: none;
+}
+.ui-select-menu {
+    /*border-radius: 1rem;*/
+    display: block;
+    pointer-events: none;
+    background: #fff;
+    position: absolute;
+    left: -1px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: .50rem;
+    width: 101%;
+    max-height: 200px;
+    z-index: 555;
+    transition: .3s;
+    filter: opacity(0);
+    overflow: hidden;
+    overflow-y: auto;
+    transform: translateY(-8px);
+}
+.ui-select 
+.ui-select-menu
+input[type="radio"] {
+  display: none;
+}
+.ui-select 
+.ui-select-menu
+label {
+    display: flex;
+    align-items: center;
+    padding: 0 1.1rem;
+    height: 50px;
+    font-size: var(--ui-input-text-size);
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+}
+.ui-select 
+.ui-select-menu
+input[type="radio"]:checked + label {
+    background: #f0f0f0;
+    color: #000;
+    font-weight: 600;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.ui-select 
+.ui-select-menu
+label:hover {
+    background: #f0f0f0;
+    color: #000;
+}
+.ui-select:focus 
+.ui-select-menu {
+  pointer-events: all;
+  filter: opacity(1);
+  transform: translateY(0px);
+}
+.ui-select.disabled:focus 
+.ui-select-menu {
+  pointer-events: none;
+  filter: 0;
+  transform: translateY(-8px);
+}

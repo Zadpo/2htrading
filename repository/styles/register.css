@@ -1,0 +1,52 @@
+html {
+    user-select: none;
+    text-decoration: none;
+}
+html, body, .wrapper {
+    height: 100%;
+}
+.wrapper {
+    overflow: auto;
+}
+.app-form {
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+    min-width: 768px;
+    width: 100%;
+    max-width: 768px;
+}
+.app-form.verification {
+    min-width: 468px;
+    width: 100%;
+    max-width: 468px;
+}
+.app-form 
+.app-form-title {
+    font-weight: bold;
+}
+.app-form 
+.app-form-meta {
+    font-weight: 500;
+    color: #888;
+}
+.rounded-seperator {
+    background: var(--app-color-primary);
+    border-radius: 1rem;
+    width: 64px;
+    height: 8px;
+    margin-bottom: 3rem;
+}
+.app-form 
+.app-inner-form 
+.social-links {
+
+}
+.app-form 
+.app-inner-form 
+.social-links a {
+    color: #000;
+    padding: 1rem;
+    text-decoration: none;
+
+}

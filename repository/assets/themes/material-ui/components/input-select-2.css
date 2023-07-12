@@ -1,0 +1,15 @@
+.ui-input-select {
+	font-size: var(--ui-input-text-size);
+	border-radius: var(--ui-border-radius);
+	border: var(--ui-input-border);
+	color: var(--ui-input-text-color);
+	display: block;
+	width: 100%;
+	height: var(--ui-input-height);
+	padding: 0 1.1rem;
+	position: relative;
+}
+.ui-input-select:focus {
+	outline: none;	
+	border: 1px solid var(--ui-color-blue);
+}

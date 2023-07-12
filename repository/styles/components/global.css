@@ -1,0 +1,22 @@
+:root {
+
+    --th-margin-bottom: 1.5rem;
+
+    --th-color-red: #d32f2f;
+    --th-color-green: #14b932;
+    --th-color-blue: #2962ff;
+    --th-color-purple: #4f46e5;
+	--th-color-yellow: #f29400;
+    --th-color-white: #fff;
+    --th-color-off: #9ea7ad;
+    --th-color-standby: #2dccff;
+    --th-color-normal: #56f000;
+    --th-color-caution: #fce83a;
+    --th-color-serious: #b3820c;
+    --th-color-critical: #ff3838;
+
+    --th-box-font-size: 16px;
+    --th-box-radius: .25rem;
+    --th-box-padding: .75rem 1rem;
+    
+}

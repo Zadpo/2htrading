@@ -1,0 +1,31 @@
+.th-input-text, .th-input-password, .th-input-select, .th-input-date {
+    padding: var(--th-box-padding);
+    border-radius: var(--th-box-radius);
+    outline: none;
+    font-size: var(--th-box-font-size);
+    border: 1px solid #ccc;
+    width: 100%;
+    display: block;
+    user-select: none;
+}
+.th-input-text:focus, .th-input-password:focus, .th-input-select:focus, .th-input-date:focus {
+    border: 1px solid var(--th-color-primary);
+}
+.th-input-text.error, .th-input-password.error, .th-input-select.error, .th-input-date.error {
+    background: #fbf6f6;
+    border: 1px solid #f06360;
+}
+.th-input-text.error:focus, .th-input-password.error:focus, .th-input-select.error:focus, .th-input-date.error:focus {
+    border: 1px solid #f06360;
+}
+.th-password-wrapper {
+    position: relative;
+}
+
+.th-password-wrapper 
+.th-password-wrapper-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
