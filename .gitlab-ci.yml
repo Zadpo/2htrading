@@ -1,0 +1,12 @@
+stages:
+  - build
+
+build:
+  image: php:7.4-fpm
+  script:
+    - mv public public_html # Rename "public" folder to "public_html"
+  artifacts:
+    paths:
+      - public_html
+  only:
+    - master
